@@ -2,7 +2,7 @@
 
 * Студент: [Алёна Колесникова](https://up.htmlacademy.ru/htmlcss/39/user/2449337).
 * Наставник:[Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
-
+*Сайт: [Мой проэкт Седона](https://kolesnikovaalena.github.io/2449337-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
