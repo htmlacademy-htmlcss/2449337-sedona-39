@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алёна Колесникова](https://up.htmlacademy.ru/htmlcss/39/user/2449337).
-* Наставник: [Екатерина Комнатная] (https://htmlacademy.ru/profile/id215761).
+* Наставник:[Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
