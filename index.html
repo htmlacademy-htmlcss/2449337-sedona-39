@@ -7,17 +7,19 @@
   <body>
 <header class="page-header">
 <nav class="navigation">
+  <a class="navigation-logo" href="index.html">
+    <img class="page-header-logo" alt="Логотип Седона" src="">
+  </a>
 <ul class="navigation-list">
-<li class="navigation-item"
+
+<li class="navigation-item">
  <a class="navigation-link" href="main.html">Главная</a>
 </li>
-</ul>
-<ul class="navigation-list">
+
   <li class="navigation-item">
    <a class="navigation-link" href="about.html">О седоне</a>
   </li>
-  </ul>
-  <ul class="navigation-list">
+
     <li class="navigation-item">
      <a class="navigation-link" href="hotel.html">Гостиницы</a>
     </li>
@@ -119,7 +121,9 @@
 <h3>Подпишитесь на рассылку</h3>
 <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-  <input class="subscription-email" type="email" id="email" name="email" placeholder="emaile@example.com" required>
+  <label for="email">Email</label>
+  <input class="subscription-email" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
+
 <button class="button" type="submit">Подписаться</button>
 </form>
 </section>
@@ -144,7 +148,9 @@
 </section>
 <section class="footer-academy">
 <h2 class="visually-hidden"> Логотип академии</h2>
-<a class="footer-academy-logo"href="https://htmlacademy.ru/">.html academy</a>
+<a class="footer-academy-logo" href="https://htmlacademy.ru/">
+  <img class="page-footer-logo" alt="Логотип академии" src="">
+</a>
 </section>
 </footer>
   </body>
