@@ -43,20 +43,20 @@
       </a>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link " href="index.html">
-              <span class="visually-hidden"> Главная</span>
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
       <section class="catalog-products">
+        <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link " href="index.html">
+                <span class="visually-hidden"> Главная</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ry/" method="get">
           <fieldset class="catalog-filter-group">
@@ -97,7 +97,7 @@
         </form>
       </section>
       <section class="product">
-        <h2>
+        <h2 class="product-title-full">
           <span class="product-title">Найдено гостиниц:</span>
           <span class="product-number">38</span>
         </h2>
@@ -117,7 +117,7 @@
         </a>
         <ul class="product-list">
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotels/hotel-1.jpg" alt="Отель Amara Resort & Spa">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
@@ -128,7 +128,7 @@
             <span class="product-card-reiting">Рейтинг: 8,5</span>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotels/hotel-2.jpg" alt=" Отель Villas at Poco Diablo">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
@@ -139,7 +139,7 @@
             <span class="product-card-reiting">Рейтинг: 9,2 </span>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotels/hotel-3.jpg" alt=" Отель Desert Quail Inn">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
@@ -150,7 +150,7 @@
             <span class="product-card-reiting">Рейтинг: 6,9 </span>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotels/hotel-4.jpg" alt=" Отель GreenTree Inn">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
@@ -200,7 +200,7 @@
           <input class="subscription-email-catalog" type="email" id="email" name="email" placeholder="Ваш e-mail"
             required>
 
-          <button class="button button-blue" type="submit">Подписаться</button>
+          <button class="button button-blue subscription" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -209,14 +209,19 @@
         <h2 class="visually-hidden"> Мы в соц сетях </h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href=" https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span> </a>
+            <a class="button" href=" https://vk.com/htmlacademy">
+              <img class="social-logo" alt="Логотип вконтакте" src="images/social/social-vk.svg">
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy "><span class="visually-hidden">Телеграм</span> </a>
+            <a class="button" href="https://t.me/htmlacademy ">
+              <img class="social-logo" alt="Логотип телеграма" src="images/social/social-telegram.svg">
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru"><span
-                class="visually-hidden">Ютуб</span> </a>
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="social-logo" alt="Логотип ютуба" src="images/social/social-youtube.svg">
+            </a>
           </li>
         </ul>
       </section>
