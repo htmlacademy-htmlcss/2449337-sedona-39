@@ -19,12 +19,22 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  background-color: #F2F2F2;
+}
+
+.content {
   background-color: #ffffff;
 }
 
-.page-header {
-  background: #ffffff;
-  color: #000000;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation-item,
@@ -40,8 +50,8 @@ body {
 
 .section-logo {
   background: url("../images/index-background.jpg") no-repeat;
-  background-color: #ffffff;
-  background-size: 100% auto;
+  background-color: #E6E6E6;
+  background-size: cover;
 }
 
 .section-title,
@@ -82,14 +92,14 @@ body {
 .subscription-section {
   text-align: center;
   background: #E6E6E6 url("../images/subscribe.jpg") no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #ffffff;
 }
 
 .catalog-products {
   background: #E6E6E6 url("../images/catalog-form.jpg") no-repeat;
   color: #ffffff;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .button {
@@ -100,6 +110,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
 }
 
 .button-brown {
@@ -114,12 +125,16 @@ body {
   background-color: #7DB54F;
 }
 
+.button-transparent {
+  background-color: transparent;
+}
+
 .subscription-title {
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.footer-contacts,
+
 .footer-contacts-phone {
   text-decoration: none;
   color: #000000;
@@ -140,6 +155,14 @@ body {
 
 .backgraund-white {
   background-color: #ffffff;
+}
+
+.backgraund-light {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.backgraund-medium {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .subscription {
@@ -179,10 +202,13 @@ body {
 
 .product-card-link {
   color: #000000;
-  font-size: 24px;
-  line-height: 28px;
   text-decoration: none;
   font-weight: 700;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .pagination-link {
@@ -232,4 +258,8 @@ body {
 .product-control {
   font-size: 18px;
   line-height: 21px;
+}
+
+.subscription-email {
+  font-family: inherit;
 }
