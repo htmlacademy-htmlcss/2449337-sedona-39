@@ -59,18 +59,28 @@ body {
 }
 
 .navigation-list {
-  width: 607px;
+  display: flex;
+  width: 450px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.navigation-item-user {
+  min-width: 44px;
+  min-height: 64px;
 }
 
 .navigation-user {
-  max-width: 318px;
+  width: 318px;
   margin-left: auto;
+  padding: 22px 12px;
 }
 
-.navigation-item,
 .navigation-link {
+  padding: 20px 16px;
+  display: block;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -80,9 +90,14 @@ body {
   text-align: center;
 }
 
+.navigation-logo {
+  margin-right: 30px;
+}
+
 .logo {
   display: block;
   margin: 0 auto;
+  padding: 51px 371px 82px 371px;
 }
 
 .section-logo {
@@ -91,7 +106,16 @@ body {
   background-size: cover;
 }
 
-.section-title,
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 69px 290px 25px;
+}
+
 .interesting-title {
   text-align: center;
   font-size: 30px;
@@ -103,9 +127,33 @@ body {
 
 .sectoin-text {
   text-align: center;
+  margin: 0px 274px 69px;
 }
 
-.advantages-title,
+.section-servises-title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 64px 347px 20px;
+}
+
+.sectoin-servises-text {
+  text-align: center;
+  margin: 0px 355px 64px;
+}
+
+.advantages-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .servises-title {
   text-align: center;
   font-size: 24px;
@@ -115,7 +163,12 @@ body {
   font-weight: 700;
 }
 
-.advantages-description,
+.advantages-description {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .servises-text {
   text-align: center;
   font-size: 18px;
@@ -131,6 +184,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item {
@@ -142,6 +196,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .servises-item {
@@ -150,6 +205,7 @@ body {
 
 .interesting-section {
   text-align: center;
+  margin: 96px 304px;
 }
 
 .subscription-section {
@@ -219,10 +275,12 @@ body {
 }
 
 .footer-content {
+  margin: 40px 70px 30px;
   display: flex;
+  flex-direction: row;
   width: 1060px;
-  margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-contacts {
@@ -246,6 +304,13 @@ body {
   text-align: center;
   max-width: 142px;
   margin-right: auto;
+  min-width: 142px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
 }
 
 .backgraund-dark,
@@ -293,6 +358,7 @@ body {
 }
 
 .product-filter {
+  display: flex;
   width: 1060px;
   margin: 50px 70px 40px 70px;
 }
@@ -302,6 +368,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  margin-right: auto;
 }
 
 .product-card {
@@ -309,6 +376,7 @@ body {
   line-height: 21px;
   margin-right: 20px;
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 .product-card-reiting {
@@ -334,6 +402,10 @@ body {
   margin: 80px 70px 60px 70px;
 }
 
+.pagination-item {
+  list-style-type: none;
+}
+
 .pagination-link {
   color: #ffffff;
   font-size: 20px;
@@ -348,6 +420,7 @@ body {
 .pagination-button {
   padding: 16px 23px;
   margin-left: 8px;
+  background-color: #ffffff;
 }
 
 .pagination-current {
@@ -362,12 +435,23 @@ body {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin-bottom: 8px;
+
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+  margin-right: 28px;
 }
 
 .catalog-filter-title {
@@ -390,6 +474,9 @@ body {
 .product-control {
   font-size: 18px;
   line-height: 21px;
+  width: 292px;
+  height: 49px;
+  background-color: #ffffff;
 }
 
 .subscription-email {
