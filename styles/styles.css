@@ -36,7 +36,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -61,11 +60,13 @@ body {
 
 .heart-icon {
   background-image: url("../images/heart.svg");
+  position: relative;
   width: 44px;
   height: 64px;
   background-position: center;
   background-repeat: no-repeat;
   display: block;
+  text-decoration: none;
 }
 
 .navigation {
@@ -96,6 +97,8 @@ body {
   flex-wrap: wrap;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: 168px;
+  max-width: 400px;
 }
 
 .navigation-user {
@@ -140,7 +143,23 @@ body {
   margin-right: 30px;
 }
 
+.notification-badge {
+  display: block;
+  position: absolute;
+  text-align: center;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 10px;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  top: 11px;
+}
+
 .page-header-logo {
+  position: absolute;
   display: block;
   margin-bottom: -6px;
 }
@@ -152,9 +171,11 @@ body {
 }
 
 .section-logo {
-  background: url("../images/index-background.jpg") no-repeat;
-  background-color: #E6E6E6;
-  background-size: cover;
+  background: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #70a3c6;
+  background-position: center bottom;
+  background-size: 100% auto, cover;
   padding-top: 51px;
   padding-bottom: 82px;
 }
@@ -175,6 +196,7 @@ body {
   text-align: center;
 }
 
+
 .advantages-title,
 .servises-title {
   text-align: center;
@@ -184,6 +206,36 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   margin: 0px;
+  margin-bottom: 30px;
+}
+
+.advantages-title {
+  margin-bottom: 60px;
+}
+
+
+
+.advantages-description,
+.advantages-description-white {
+  position: relative;
+  margin: 0px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-description::before {
+  position: absolute;
+  right: 85px;
+  top: -30px;
+  left: 85px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+
+.advantages-description-white::before {
+  background-color: rgba(225, 225, 225, 0.3);
 }
 
 .advantages-section-text {
@@ -194,16 +246,12 @@ body {
   padding: 64px 347px;
 }
 
-.advantages-description {
-  text-align: center;
-  font-size: 18px;
-  line-height: 21px;
-}
 
 .servises-text {
   text-align: center;
   font-size: 18px;
   line-height: 21px;
+  margin: 0px;
 }
 
 .advantages-list {
@@ -237,7 +285,8 @@ body {
 }
 
 .catalog-products {
-  background: #E6E6E6 url("../images/catalog-form.jpg") no-repeat;
+  background: url("../images/catalog-form.jpg") no-repeat;
+  background-color: #6b8eb4;
   color: #ffffff;
   background-size: cover;
   width: 1060px;
@@ -377,32 +426,60 @@ body {
   line-height: 40px;
 }
 
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.footer-academy-logo {
+  color: #000000;
+}
+
+.footer-academy-logo:hover {
+  color: #756157;
+}
+
+.footer-academy-logo:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-academy-logo:focus {
+  color: #756157;
+}
+
 .soc-icon {
   width: 47px;
   height: 40px;
   background-position: center;
   background-repeat: no-repeat;
   display: block;
-}
-
-.vk-logo {
-  background-image: url("../images/social/social-vk.svg");
-
+  color: #83B3D3;
 }
 
 .telegram-logo {
-  background-image: url("../images/social/social-telegram.svg");
   width: 48px;
   height: 41px;
 
 }
 
-.youtube-logo {
-  background-image: url("../images/social/social-youtube.svg");
-
+.soc-icon:hover {
+  color: #68A2CA;
 }
 
+.soc-icon:active {
+  color: rgba(104, 162, 202, 0.3);
+}
 
+.soc-icon:focus {
+  color: #68A2CA;
+}
 
 .footer-social-list {
   display: flex;
@@ -416,6 +493,7 @@ body {
   padding: 102px 85px;
   box-sizing: border-box;
   width: 400px;
+  min-height: 385px;
   margin: 0px;
   color: #ffffff;
 }
@@ -428,6 +506,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   margin: 0px;
+  margin-bottom: 60px;
 }
 
 .photo-citi {
@@ -465,7 +544,7 @@ body {
 }
 
 .servises-item {
-  padding: 183px 85px 113px;
+  padding: 183px 85px 81px;
   background-repeat: no-repeat;
   background-position: 162px 82px;
 }
@@ -547,7 +626,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   margin-right: auto;
-
+  text-transform: uppercase;
 }
 
 .product {
@@ -730,6 +809,7 @@ body {
   line-height: 21px;
   text-decoration: none;
   margin-right: 28px;
+  color: inherit;
 }
 
 .breadcrumbs-link:hover {
@@ -766,6 +846,10 @@ body {
   margin-top: 32px;
   margin-right: 38px;
   padding: 0px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .filter {
@@ -806,6 +890,21 @@ body {
 .control {
   font-size: 18px;
   line-height: 23px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.control-input-title {
+  padding-left: 36px;
+}
+
+.control-input-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 
 .control-input {
@@ -820,6 +919,7 @@ body {
 }
 
 
+
 .product-control {
   font-size: 18px;
   line-height: 21px;
@@ -831,7 +931,10 @@ body {
   border-radius: 4px;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
-  background-position: 260px 20px;
+  background-position: right 20px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .product-control:hover {
@@ -842,6 +945,14 @@ body {
   border: 2px solid #68A2CA;
 }
 
+.subscription-form {
+  display: flex;
+}
+
+.subscription-form-catalog {
+  display: flex;
+}
+
 .subscription-email {
   box-sizing: border-box;
   font-family: inherit;
@@ -850,6 +961,7 @@ body {
   width: 452px;
   margin-right: 0px;
   min-height: 52px;
+  padding: 14px 20px;
 }
 
 .subscription-email:hover {
@@ -858,18 +970,22 @@ body {
 
 .subscription-email:active {
   background-color: #E6E6E6;
-  border: 2px solid #83B3D3;
+  box-shadow: 0 0 0 2px #83B3D3;
 }
 
 .subscription-email:focus {
   background-color: #E6E6E6;
-  border: 2px solid #83B3D3;
+  box-shadow: 0 0 0 2px #83B3D3;
 }
 
 .number {
   box-sizing: border-box;
   border: none;
   width: 143px;
+  padding: 12px 20px;
+  min-height: 48px;
+  appearance: textfield;
+  background-color: #F2F2F2;
 }
 
 .number:hover {
@@ -877,13 +993,15 @@ body {
 }
 
 .number:active {
+  box-sizing: border-box;
   background-color: #E6E6E6;
-  border: 2px solid #83B3D3;
+  box-shadow: 0 0 0 2px #83B3D3;
 }
 
 .number:focus {
+  box-sizing: border-box;
   background-color: #E6E6E6;
-  border: 2px solid #83B3D3;
+  box-shadow: 0 0 0 2px #83B3D3;
 }
 
 .catalog-vied-list {
@@ -959,4 +1077,111 @@ body {
 
 .choince-list {
   font-family: inherit;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 36px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #82B3D3;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 3px solid #82B3D3;
+}
+
+.toggle-min {
+  top: -10px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -10px;
+  right: -10px;
+}
+
+.control:hover .control-input-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:active .control-input-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input-title:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input-title:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-input-mark::before,
+.control-input[type="checkbox"]:checked + .control-input-mark::after {
+  background-image: url("../images/checkmark.svg");
+  width: 12px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  background-size: cover;
+  content: "";
+}
+
+.control-input-mark-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control:hover .control-input-mark-circle {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:active .control-input-mark-circle {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="radio"] + .control-input-mark-circle {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-input-mark-circle::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
 }
