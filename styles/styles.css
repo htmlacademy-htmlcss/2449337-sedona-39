@@ -153,9 +153,11 @@ body {
   font-size: 10px;
   line-height: 10px;
   width: 20px;
-  height: 20px;
+  height: 10px;
   left: 20px;
   top: 11px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .page-header-logo {
@@ -808,8 +810,13 @@ body {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
-  margin-right: 28px;
   color: inherit;
+  margin-right: 18px;
+}
+
+.breadcrumbs-icon {
+  margin-bottom: 0px;
+  margin-top: 3px;
 }
 
 .breadcrumbs-link:hover {
@@ -827,11 +834,14 @@ body {
 .breadcrumbs-item {
   background-image: url("../images/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
-  background-position: 23px;
+  background-position: right;
+  position: relative;
+  margin-right: 10px;
 }
 
 .breadcrumbs-item:last-child {
   background-image: none;
+  margin-right: 0px;
 }
 
 .catalog-filter-title {
@@ -844,7 +854,6 @@ body {
   list-style-type: none;
   margin: 0px;
   margin-top: 32px;
-  margin-right: 38px;
   padding: 0px;
 }
 
@@ -860,16 +869,16 @@ body {
 }
 
 .catalog-filter-group {
-  width: 150px;
+  width: 160px;
   margin: 0px;
-  margin-right: 70px;
+  margin-right: 60px;
   border: 0px;
   padding: 0px;
 }
 
 .type-home {
   margin: 0px;
-  margin-right: 140px;
+  margin-right: auto;
 }
 
 .cost {
@@ -918,9 +927,8 @@ body {
   margin-right: 0px;
 }
 
-
-
 .product-control {
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   width: 292px;
@@ -984,6 +992,7 @@ body {
   width: 143px;
   padding: 12px 20px;
   min-height: 48px;
+  appearance: none;
   appearance: textfield;
   background-color: #F2F2F2;
 }
@@ -1083,6 +1092,7 @@ body {
   position: relative;
   height: 4px;
   margin-top: 36px;
+  margin-left: 10px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
 }
@@ -1113,12 +1123,12 @@ body {
 }
 
 .toggle-min {
-  top: -10px;
+  top: -8px;
   left: -10px;
 }
 
 .toggle-max {
-  top: -10px;
+  top: -8px;
   right: -10px;
 }
 
