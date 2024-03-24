@@ -689,6 +689,8 @@ body {
   grid-area: reiting;
   background-color: #F2F2F2;
   border-radius: 4px;
+  text-align: center;
+  padding-top: 9px;
 }
 
 .product-card-link {
@@ -891,7 +893,7 @@ body {
 }
 
 .apply {
-
+  margin-top: 56px;
   width: 191px;
   min-height: 104px;
 }
@@ -970,6 +972,7 @@ body {
   margin-right: 0px;
   min-height: 52px;
   padding: 14px 20px;
+  border-radius: 4px;
 }
 
 .subscription-email:hover {
@@ -1194,4 +1197,282 @@ body {
   background-color: #3F5E72;
   border-radius: 50%;
   content: "";
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-auth {
+  box-sizing: border-box;
+  width: 717px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.button-send {
+  width: 577px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 18px 256px;
+}
+
+.auth-form .field-group {
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.auth-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.auth-form .field {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  box-sizing: border-box;
+  width: 440px;
+  min-height: 48px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  padding-right: 45px;
+  padding-left: 20px;
+}
+
+.auth-form .field:hover {
+  background-color: #E6E6E6;
+}
+
+.auth-form .field:active {
+  background-color: #E6E6E6;
+}
+
+.auth-form .field:focus {
+  background-color: #E6E6E6;
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.auth-form .form-little {
+  width: 110px;
+  appearance: none;
+  appearance: textfield;
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.form-adults {
+  margin-right: 85px;
+}
+
+.field-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.kids {
+  margin-right: 82px;
+  margin-top: 12px;
+}
+
+.tooltip {
+  position: absolute;
+  margin-left: 10px;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  opacity: 0.8;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 8px;
+  width: 216px;
+  margin-top: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content: '';
+  background-image: url("../images/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date-check {
+  margin-right: 18px;
+  margin-top: 12px;
+}
+
+.data-departure {
+  margin-right: 12px;
+  margin-top: 12px;
+}
+
+.adults {
+  margin-right: 39px;
+  margin-top: 12px;
+}
+
+.data-text {
+  color: #333333;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 4px;
+  margin-left: 157px;
+}
+
+.data-check-text {
+  color: #FF5757;
+}
+
+.data-button {
+  border: none;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+
+.input-data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-button {
+  position: relative;
+}
+
+.button-minus {
+  position: absolute;
+  border: none;
+  top: 14px;
+  left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-minus:hover svg {
+  color: #000000;
+}
+
+.button-minus:focus {
+  color: #000000;
+  box-shadow: 0 0 0 3px #82B3D3;
+}
+
+.button-plus {
+  position: absolute;
+  border: none;
+  top: 14px;
+  left: 71px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-plus:hover svg {
+  color: #000000;
+}
+
+.button-plus:focus {
+  color: #000000;
+  box-shadow: 0 0 0 3px #82B3D3;
+}
+
+.input-number {
+  display: flex;
+}
+
+.modal-close {
+  display: none;
 }
