@@ -4,12 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="content">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" alt="Логотип Седона" src="images/logotype.svg">
@@ -44,7 +45,7 @@
           </a>
         </nav>
       </header>
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
         <section class="catalog-products">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -64,7 +65,7 @@
             </ul>
           </header>
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ry/" method="get">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ry/" method="get" data-test="filter">
             <div class="filter">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -143,7 +144,7 @@
             </div>
           </form>
         </section>
-        <section class="product">
+        <section class="product" data-test="catalog">
           <div class="product-filter">
             <h2 class="product-title-full">
               <span class="product-title">Найдено гостиниц:</span>
@@ -270,7 +271,7 @@
             </a>
           </li>
         </ul>
-        <section class="subscription-section-catalog">
+        <section class="subscription-section-catalog" data-test="subscribe">
           <h2 class="subscription-title-catalog">Подпишитесь на рассылку</h2>
           <p class="subscription-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
@@ -281,7 +282,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="footer-social">
           <h2 class="visually-hidden"> Мы в соц сетях </h2>
           <ul class="footer-social-list">
