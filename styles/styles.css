@@ -368,7 +368,7 @@ img {
 }
 
 .button-transparent:focus {
-  border: 3px solid #83B3D3;
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .button-search-hotel {
@@ -940,6 +940,7 @@ img {
   line-height: 21px;
   width: 292px;
   height: 49px;
+  padding-left: 20px;
   background-color: #ffffff;
   margin-right: 70px;
   border: 2px solid #E5E5E5;
@@ -1003,6 +1004,7 @@ img {
   appearance: none;
   appearance: textfield;
   background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
 .number:hover {
