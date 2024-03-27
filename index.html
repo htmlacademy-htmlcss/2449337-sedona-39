@@ -20,7 +20,7 @@
               <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -48,6 +48,7 @@
       <main class="main-index" data-test="main">
         <h1 class="visually-hidden">Седона</h1>
         <section class="section-logo" data-test="hero">
+          <h2 class="visually-hidden">Логотип Седоны</h2>
           <img class="logo" width="458" height="352" src="images/welcomelogo.svg" alt="Логотип Седона">
         </section>
         <section class="advantages" data-test="advantages">
@@ -84,7 +85,7 @@
             </li>
             <li class="advantages-item backgraund-dark backgraund-dark-reverse">
               <div class="advantages-text">
-                <h3 class="advantages-title-white">Там есть мост дьявола</h3>
+                <h3 class="advantages-title-white">Там есть<br> мост дьявола</h3>
                 <p class="advantages-description advantages-description-white">Да, по нему можно пройти! Если вы
                   осмелитесь, разумеется</p>
               </div>
@@ -100,30 +101,31 @@
           <ul class="servises-list">
             <li class="servises-item backgraund-light home">
               <h3 class="servises-title">Жильё</h3>
-              <p class="servises-text">Рекомендуем пожить в настоящем мотеле,
+              <p class="servises-text">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
             <li class="servises-item backgraund-white food">
               <h3 class="servises-title">Еда</h3>
-              <p class="servises-text">Всегда заказывайте
+              <p class="servises-text">Всегда заказывайте<br>
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="servises-item backgraund-light souvenirs">
               <h3 class="servises-title">Сувениры</h3>
-              <p class="servises-text">Не только китайского,
+              <p class="servises-text">Не только китайского,<br>
                 но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
         <section class="interesting-section" data-test="search">
           <h2 class="interesting-title">Заинтересовались?</h2>
-          <p class="interesting-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+          <p class="interesting-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+            гостиниц
             в Седоне</p>
-          <a class="button button-brown button-search-hotel" href="#">Поиск Гостиницы в Седоне</a>
+          <a class="button button-brown button-search-hotel" href="modal.html">Поиск Гостиницы в Седоне</a>
         </section>
         <section class="subscription-section" data-test="subscribe">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-          <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscription-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Email</label>
             <input class="subscription-email" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
@@ -165,7 +167,7 @@
         </section>
         <section class="footer-contacts">
           <h2 class="visually-hidden"> Контакты </h2>
-          <a class="footer-contacts-phone" href="tel:78128121212">+7 812 812-12-12</a>
+          <a class="footer-contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-academy">
           <h2 class="visually-hidden"> Логотип академии</h2>
@@ -185,9 +187,9 @@
         </section>
       </footer>
 
-      <div class="modal-container modal-close">
+      <div class="modal-container modal-close" data-test="modal">
         <div class="modal modal-auth">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
             <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -198,152 +200,159 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="auth-form" action="https://echo.htmlacademy.ru/courses" method="post">
               <div class="field-group">
-                <label class="input-data">
+                <label class="input-data" for="date-check">
                   <span class="field-title date-check">Дата Заезда:</span>
-                  <div class="input-button">
-                    <input class="auth-form-field field" type="text" value="27 апреля 2020">
-                    <button class="data-button" type="button">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.3">
-                          <path
-                            d="M7.75 12C8.05 12 8.25 11.8 8.25 11.5C8.25 11.2 8.05 11 7.75 11C7.45 11 7.25 11.2 7.25 11.5C7.25 11.8 7.45 12 7.75 12Z"
-                            fill="black" />
-                          <path
-                            d="M17 4H15V2H14V4H6V2H5V4H3C2.4 4 2 4.4 2 5V16C2 16.5 2.4 17 3 17H17C17.5 17 18 16.5 18 16V5C18 4.4 17.5 4 17 4ZM17 16H3V9H17V16ZM3 8V5H5V7H6V5H14V7H15V5H17V8H3Z"
-                            fill="black" />
-                          <path
-                            d="M10 12C10.3 12 10.5 11.8 10.5 11.5C10.5 11.2 10.3 11 10 11C9.7 11 9.5 11.2 9.5 11.5C9.5 11.8 9.7 12 10 12Z"
-                            fill="black" />
-                          <path
-                            d="M12.25 12C12.55 12 12.75 11.8 12.75 11.5C12.75 11.2 12.55 11 12.25 11C11.95 11 11.75 11.2 11.75 11.5C11.75 11.8 11.95 12 12.25 12Z"
-                            fill="black" />
-                          <path
-                            d="M7.75 13C7.45 13 7.25 13.2 7.25 13.5C7.25 13.8 7.45 14 7.75 14C8.05 14 8.25 13.8 8.25 13.5C8.25 13.2 8.05 13 7.75 13Z"
-                            fill="black" />
-                          <path
-                            d="M5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12Z"
-                            fill="black" />
-                          <path
-                            d="M5.5 13C5.2 13 5 13.2 5 13.5C5 13.8 5.2 14 5.5 14C5.8 14 6 13.8 6 13.5C6 13.2 5.8 13 5.5 13Z"
-                            fill="black" />
-                          <path
-                            d="M10 13C9.7 13 9.5 13.2 9.5 13.5C9.5 13.8 9.7 14 10 14C10.3 14 10.5 13.8 10.5 13.5C10.5 13.2 10.3 13 10 13Z"
-                            fill="black" />
-                          <path
-                            d="M12.25 13C11.95 13 11.75 13.2 11.75 13.5C11.75 13.8 11.95 14 12.25 14C12.55 14 12.75 13.8 12.75 13.5C12.75 13.2 12.55 13 12.25 13Z"
-                            fill="black" />
-                          <path
-                            d="M14.5 12C14.8 12 15 11.8 15 11.5C15 11.2 14.8 11 14.5 11C14.2 11 14 11.2 14 11.5C14 11.8 14.2 12 14.5 12Z"
-                            fill="black" />
-                          <path
-                            d="M14.5 13C14.2 13 14 13.2 14 13.5C14 13.8 14.2 14 14.5 14C14.8 14 15 13.8 15 13.5C15 13.2 14.8 13 14.5 13Z"
-                            fill="black" />
-                        </g>
-                      </svg>
-                    </button>
-                  </div>
-                  <span class="data-text data-check-text">Мы не можем отправить вас в прошлое.</span>
                 </label>
+                <div class="input-button input-button-data">
+                  <input class="auth-form-field field field-data" id="date-check" name="date-check" type="text"
+                    value="27 апреля 2020">
+                  <button class="data-button" name="calendar" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.3">
+                        <path
+                          d="M7.75 12C8.05 12 8.25 11.8 8.25 11.5C8.25 11.2 8.05 11 7.75 11C7.45 11 7.25 11.2 7.25 11.5C7.25 11.8 7.45 12 7.75 12Z"
+                          fill="black" />
+                        <path
+                          d="M17 4H15V2H14V4H6V2H5V4H3C2.4 4 2 4.4 2 5V16C2 16.5 2.4 17 3 17H17C17.5 17 18 16.5 18 16V5C18 4.4 17.5 4 17 4ZM17 16H3V9H17V16ZM3 8V5H5V7H6V5H14V7H15V5H17V8H3Z"
+                          fill="black" />
+                        <path
+                          d="M10 12C10.3 12 10.5 11.8 10.5 11.5C10.5 11.2 10.3 11 10 11C9.7 11 9.5 11.2 9.5 11.5C9.5 11.8 9.7 12 10 12Z"
+                          fill="black" />
+                        <path
+                          d="M12.25 12C12.55 12 12.75 11.8 12.75 11.5C12.75 11.2 12.55 11 12.25 11C11.95 11 11.75 11.2 11.75 11.5C11.75 11.8 11.95 12 12.25 12Z"
+                          fill="black" />
+                        <path
+                          d="M7.75 13C7.45 13 7.25 13.2 7.25 13.5C7.25 13.8 7.45 14 7.75 14C8.05 14 8.25 13.8 8.25 13.5C8.25 13.2 8.05 13 7.75 13Z"
+                          fill="black" />
+                        <path
+                          d="M5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12Z"
+                          fill="black" />
+                        <path
+                          d="M5.5 13C5.2 13 5 13.2 5 13.5C5 13.8 5.2 14 5.5 14C5.8 14 6 13.8 6 13.5C6 13.2 5.8 13 5.5 13Z"
+                          fill="black" />
+                        <path
+                          d="M10 13C9.7 13 9.5 13.2 9.5 13.5C9.5 13.8 9.7 14 10 14C10.3 14 10.5 13.8 10.5 13.5C10.5 13.2 10.3 13 10 13Z"
+                          fill="black" />
+                        <path
+                          d="M12.25 13C11.95 13 11.75 13.2 11.75 13.5C11.75 13.8 11.95 14 12.25 14C12.55 14 12.75 13.8 12.75 13.5C12.75 13.2 12.55 13 12.25 13Z"
+                          fill="black" />
+                        <path
+                          d="M14.5 12C14.8 12 15 11.8 15 11.5C15 11.2 14.8 11 14.5 11C14.2 11 14 11.2 14 11.5C14 11.8 14.2 12 14.5 12Z"
+                          fill="black" />
+                        <path
+                          d="M14.5 13C14.2 13 14 13.2 14 13.5C14 13.8 14.2 14 14.5 14C14.8 14 15 13.8 15 13.5C15 13.2 14.8 13 14.5 13Z"
+                          fill="black" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <span class="data-text data-check-text">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="field-group">
-                <label class="input-data">
+                <label class="input-data" for="data-departure">
                   <span class="field-title data-departure">Дата Выезда:</span>
-                  <div class="input-button">
-                    <input class="auth-form-field field" type="text" value="1 сентября 2023">
-                    <button class="data-button" type="button">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.3">
-                          <path
-                            d="M7.75 12C8.05 12 8.25 11.8 8.25 11.5C8.25 11.2 8.05 11 7.75 11C7.45 11 7.25 11.2 7.25 11.5C7.25 11.8 7.45 12 7.75 12Z"
-                            fill="black" />
-                          <path
-                            d="M17 4H15V2H14V4H6V2H5V4H3C2.4 4 2 4.4 2 5V16C2 16.5 2.4 17 3 17H17C17.5 17 18 16.5 18 16V5C18 4.4 17.5 4 17 4ZM17 16H3V9H17V16ZM3 8V5H5V7H6V5H14V7H15V5H17V8H3Z"
-                            fill="black" />
-                          <path
-                            d="M10 12C10.3 12 10.5 11.8 10.5 11.5C10.5 11.2 10.3 11 10 11C9.7 11 9.5 11.2 9.5 11.5C9.5 11.8 9.7 12 10 12Z"
-                            fill="black" />
-                          <path
-                            d="M12.25 12C12.55 12 12.75 11.8 12.75 11.5C12.75 11.2 12.55 11 12.25 11C11.95 11 11.75 11.2 11.75 11.5C11.75 11.8 11.95 12 12.25 12Z"
-                            fill="black" />
-                          <path
-                            d="M7.75 13C7.45 13 7.25 13.2 7.25 13.5C7.25 13.8 7.45 14 7.75 14C8.05 14 8.25 13.8 8.25 13.5C8.25 13.2 8.05 13 7.75 13Z"
-                            fill="black" />
-                          <path
-                            d="M5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12Z"
-                            fill="black" />
-                          <path
-                            d="M5.5 13C5.2 13 5 13.2 5 13.5C5 13.8 5.2 14 5.5 14C5.8 14 6 13.8 6 13.5C6 13.2 5.8 13 5.5 13Z"
-                            fill="black" />
-                          <path
-                            d="M10 13C9.7 13 9.5 13.2 9.5 13.5C9.5 13.8 9.7 14 10 14C10.3 14 10.5 13.8 10.5 13.5C10.5 13.2 10.3 13 10 13Z"
-                            fill="black" />
-                          <path
-                            d="M12.25 13C11.95 13 11.75 13.2 11.75 13.5C11.75 13.8 11.95 14 12.25 14C12.55 14 12.75 13.8 12.75 13.5C12.75 13.2 12.55 13 12.25 13Z"
-                            fill="black" />
-                          <path
-                            d="M14.5 12C14.8 12 15 11.8 15 11.5C15 11.2 14.8 11 14.5 11C14.2 11 14 11.2 14 11.5C14 11.8 14.2 12 14.5 12Z"
-                            fill="black" />
-                          <path
-                            d="M14.5 13C14.2 13 14 13.2 14 13.5C14 13.8 14.2 14 14.5 14C14.8 14 15 13.8 15 13.5C15 13.2 14.8 13 14.5 13Z"
-                            fill="black" />
-                        </g>
-                      </svg>
-                    </button>
-                  </div>
-                  <span class="data-text data-departure-text">На эти даты есть свободные номера. Пока есть.</span>
                 </label>
+                <div class="input-button input-button-data">
+                  <input class="auth-form-field field field-data" id="data-departure" name="data-departure" type="text"
+                    value="1 сентября 2023">
+                  <button class="data-button" name="calendar" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.3">
+                        <path
+                          d="M7.75 12C8.05 12 8.25 11.8 8.25 11.5C8.25 11.2 8.05 11 7.75 11C7.45 11 7.25 11.2 7.25 11.5C7.25 11.8 7.45 12 7.75 12Z"
+                          fill="black" />
+                        <path
+                          d="M17 4H15V2H14V4H6V2H5V4H3C2.4 4 2 4.4 2 5V16C2 16.5 2.4 17 3 17H17C17.5 17 18 16.5 18 16V5C18 4.4 17.5 4 17 4ZM17 16H3V9H17V16ZM3 8V5H5V7H6V5H14V7H15V5H17V8H3Z"
+                          fill="black" />
+                        <path
+                          d="M10 12C10.3 12 10.5 11.8 10.5 11.5C10.5 11.2 10.3 11 10 11C9.7 11 9.5 11.2 9.5 11.5C9.5 11.8 9.7 12 10 12Z"
+                          fill="black" />
+                        <path
+                          d="M12.25 12C12.55 12 12.75 11.8 12.75 11.5C12.75 11.2 12.55 11 12.25 11C11.95 11 11.75 11.2 11.75 11.5C11.75 11.8 11.95 12 12.25 12Z"
+                          fill="black" />
+                        <path
+                          d="M7.75 13C7.45 13 7.25 13.2 7.25 13.5C7.25 13.8 7.45 14 7.75 14C8.05 14 8.25 13.8 8.25 13.5C8.25 13.2 8.05 13 7.75 13Z"
+                          fill="black" />
+                        <path
+                          d="M5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12Z"
+                          fill="black" />
+                        <path
+                          d="M5.5 13C5.2 13 5 13.2 5 13.5C5 13.8 5.2 14 5.5 14C5.8 14 6 13.8 6 13.5C6 13.2 5.8 13 5.5 13Z"
+                          fill="black" />
+                        <path
+                          d="M10 13C9.7 13 9.5 13.2 9.5 13.5C9.5 13.8 9.7 14 10 14C10.3 14 10.5 13.8 10.5 13.5C10.5 13.2 10.3 13 10 13Z"
+                          fill="black" />
+                        <path
+                          d="M12.25 13C11.95 13 11.75 13.2 11.75 13.5C11.75 13.8 11.95 14 12.25 14C12.55 14 12.75 13.8 12.75 13.5C12.75 13.2 12.55 13 12.25 13Z"
+                          fill="black" />
+                        <path
+                          d="M14.5 12C14.8 12 15 11.8 15 11.5C15 11.2 14.8 11 14.5 11C14.2 11 14 11.2 14 11.5C14 11.8 14.2 12 14.5 12Z"
+                          fill="black" />
+                        <path
+                          d="M14.5 13C14.2 13 14 13.2 14 13.5C14 13.8 14.2 14 14.5 14C14.8 14 15 13.8 15 13.5C15 13.2 14.8 13 14.5 13Z"
+                          fill="black" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <span class="data-text data-departure-text">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="field-group">
-                <label class="input-number">
+                <label class="input-number" for="adults">
                   <span class="field-title adults">Взрослые:</span>
-                  <div class="input-button">
-                    <button class="button-minus" type="button">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3" />
-                      </svg>
-                    </button>
-                    <input class="auth-form-field field form-little form-adults" type="number" name="adults" value="2">
-                    <button class="button-plus" type="button">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3" />
-                      </svg>
-                    </button>
-                  </div>
                 </label>
+                <div class="input-button adults-block">
+                  <button class="button-minus" name="minus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" />
+                    </svg>
+                  </button>
+                  <input class="auth-form-field field form-little form-adults" id="adults" type="number" name="adults"
+                    value="2">
+                  <button class="button-plus" name="plus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <div class="field-group">
-                <label class="input-number">
-                  <span class="field-title kids">
-                    <span>Дети:</span>
-                    <span class="tooltip">
-                      <button class="tooltip-toggle" type="button">
-                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
-                            fill="white" />
-                        </svg>
-                      </button>
-                      <span class="tooltip-text">
-                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                        размещаются бесплатно.
-                      </span>
+              <div class="field-group kids-block">
+                <div class="tooltip-container">
+                  <label class="input-number" for="kids">
+                    <span class="field-title kids">Дети:</span>
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" name="tooltip" type="button">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.
                     </span>
                   </span>
-                  <div class="input-button">
-                    <button class="button-minus" type="button">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3" />
-                      </svg>
-                    </button>
-                    <input class="auth-form-field field form-little " type="number" name="kids" value="2">
-                    <button class="button-plus" type="button">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3" />
-                      </svg>
-                    </button>
-                  </div>
-                </label>
+                </div>
+                <div class="input-button">
+                  <button class="button-minus" name="minus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" />
+                    </svg>
+                  </button>
+                  <input class="auth-form-field field form-little " id="kids" type="number" name="kids" value="2">
+                  <button class="button-plus" name="plus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                    </svg>
+                  </button>
+                </div>
               </div>
               <button class="button button-blue button-send" type="submit">Найти</button>
             </form>
