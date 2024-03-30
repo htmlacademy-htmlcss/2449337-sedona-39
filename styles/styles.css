@@ -333,10 +333,6 @@ img {
   cursor: pointer;
 }
 
-.button:disabled {
-  background-color: #e5e5e5;
-}
-
 .button-brown {
   background-color: #756157;
   padding: 8px 20px;
@@ -710,6 +706,7 @@ img {
   padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
+  grid-template-rows: 1fr;
 }
 
 .product-card-vied {
@@ -1032,7 +1029,7 @@ img {
 
 .product-control:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
-  color:rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .subscription-form {
@@ -1291,10 +1288,10 @@ input::-webkit-inner-spin-button {
   width: 20px;
   height: 20px;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 
-  background-size:auto;
+  background-size: auto;
 }
 
 .control-input-mark-circle {
@@ -1328,16 +1325,8 @@ input::-webkit-inner-spin-button {
   content: "";
 }
 
-.control-input[type="radio"]:focus + .control-input-mark-circle::before,
-.control-input[type="radio"]:focus + .control-input-mark-circle::after {
+.control-input[type="radio"]:focus + .control-input-mark-circle {
   box-shadow: 0 0 0 3px #83b3d3;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top:0;
-  left:0;
-
-  background-size: 10px;
 }
 
 .modal-container {
@@ -1659,4 +1648,12 @@ input::-webkit-inner-spin-button {
 
 .modal-close {
   display: none;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+}
+
+.disabled:disabled {
+  background-color: #e5e5e5;
 }
