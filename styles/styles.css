@@ -1660,10 +1660,19 @@ input::-webkit-inner-spin-button {
 .disabled:disabled {
   background-color: #e5e5e5;
 }
-.control-input[type="checkbox"]:disabled + .control-input-mark:hover{
+
+.control-input[type="checkbox"]:disabled + .control-input-mark:hover {
   background-color: #ffffff;
 }
 
-.control-input[type="radio"]:disabled + .control-input-mark-circle:hover{
+.control-input[type="radio"]:disabled + .control-input-mark-circle:hover {
+  background-color: #ffffff;
+}
+
+.control:hover .control-input[type="checkbox"]:disabled + .control-input-mark {
+  background-color: #ffffff;
+}
+
+.control:hover .control-input[type="radio"]:disabled + .control-input-mark-circle {
   background-color: #ffffff;
 }
