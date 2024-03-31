@@ -1290,8 +1290,11 @@ input::-webkit-inner-spin-button {
   position: absolute;
   top: 0;
   left: 0;
-
   background-size: auto;
+}
+
+.control-input[type="checkbox"]:focus + .control-input-mark {
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .control-input-mark-circle {
@@ -1656,4 +1659,11 @@ input::-webkit-inner-spin-button {
 
 .disabled:disabled {
   background-color: #e5e5e5;
+}
+.control-input[type="checkbox"]:disabled + .control-input-mark:hover{
+  background-color: #ffffff;
+}
+
+.control-input[type="radio"]:disabled + .control-input-mark-circle:hover{
+  background-color: #ffffff;
 }
