@@ -725,6 +725,7 @@ img {
   margin-top: -4px;
   padding: 8px 26px;
   grid-area: brown;
+  max-width: 150px;
 }
 
 .product-card-button-favorit {
@@ -732,6 +733,7 @@ img {
   margin-top: -4px;
   padding: 8px 15px;
   grid-area: favorit;
+  max-width: 150px;
 }
 
 .product-card-reiting {
@@ -744,6 +746,7 @@ img {
   text-align: center;
   padding: 6px 22px;
   margin-left: auto;
+  max-width: 150px;
 }
 
 .product-card-link {
@@ -1265,8 +1268,7 @@ input::-webkit-inner-spin-button {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.control-input[type="checkbox"]:checked + .control-input-mark::before,
-.control-input[type="checkbox"]:checked + .control-input-mark::after {
+.control-input[type="checkbox"]:checked + .control-input-mark::before {
   background-image: url("../images/checkmark.svg");
   width: 12px;
   height: 10px;
@@ -1281,8 +1283,7 @@ input::-webkit-inner-spin-button {
   content: "";
 }
 
-.control-input[type="checkbox"]:focus + .control-input-mark::before,
-.control-input[type="checkbox"]:focus + .control-input-mark::after {
+.control-input[type="checkbox"]:focus + .control-input-mark::before {
   box-shadow: 0 0 0 3px #83b3d3;
   border-radius: 4px;
   width: 20px;
@@ -1661,18 +1662,22 @@ input::-webkit-inner-spin-button {
   background-color: #e5e5e5;
 }
 
-.control-input[type="checkbox"]:disabled + .control-input-mark:hover {
-  background-color: #ffffff;
-}
-
-.control-input[type="radio"]:disabled + .control-input-mark-circle:hover {
-  background-color: #ffffff;
-}
-
 .control:hover .control-input[type="checkbox"]:disabled + .control-input-mark {
   background-color: #ffffff;
 }
 
 .control:hover .control-input[type="radio"]:disabled + .control-input-mark-circle {
   background-color: #ffffff;
+}
+
+.control-input:not(:disabled):hover .control-input-mark {
+  background-color: rgba(225, 225, 225, 0.6);
+}
+
+.control-input:not(:disabled):hover .control-input-mark-circle {
+  background-color: rgba(225, 225, 225, 0.6);
+}
+
+.control-input:not(:disabled):hover .control-input-title {
+  background-color: rgba(225, 225, 225, 0.6);
 }
